@@ -1,0 +1,52 @@
+Arguments: 
+  /usr/bin/node /mnt/c/Program Files (x86)/Yarn/bin/yarn.js add multer
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Python27/:/mnt/c/Python27/Scripts:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Brackets/command:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Java/jdk1.8.0_211:/mnt/d/Android/SDK/platform-tools:/mnt/d/Android/SDK/tools:/mnt/c/Program Files/nodejs/:/mnt/d/Android/SDK/emulator:/mnt/d/Android/SDK/tools/bin:/mnt/c/Program Files (x86)/Yarn/bin/:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/even_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/even_/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/even_/AppData/Local/hyper/app-3.0.2/resources/bin:/mnt/d/php-7.4.1-nts-Win32-vc15-x64:/mnt/c/Users/even_/AppData/Roaming/npm:/mnt/c/Users/even_/AppData/Local/Yarn/bin:/snap/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.8.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/mnt/d/nlw/server/node_modules/lodash/fp/overArgs.js'
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
+      "knex:seed": "knex --knexfile knexfile.ts seed:run",
+      "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@types/cors": "^2.8.6",
+      "@types/express": "^4.17.6",
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "knex": "^0.21.1",
+      "sqlite3": "^4.2.0"
+    },
+    "devDependencies": {
+      "ts-node": "^8.10.2",
+      "ts-node-dev": "^1.0.0-pre.44",
+      "typescript": "^3.9.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
